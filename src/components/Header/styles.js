@@ -16,7 +16,6 @@ export const StyledHeader = styled.header`
     width: 110px;
   }
   @media screen and (min-width: 769px) {
-    margin-top: 40px;
     & img {
       width: 145px;
     }
