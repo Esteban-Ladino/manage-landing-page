@@ -4,7 +4,8 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  max-width: 1125px;
+  margin: 50px auto 75px;
 
   @media screen and (min-width: 769px) {
     display: grid;
@@ -29,7 +30,7 @@ export const Intro = styled.div`
   & h1 {
     font-size: 2.5rem;
     line-height: 2.85rem;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
     color: ${({ theme }) => theme.darkBlue}
   } 
   & p {
@@ -39,7 +40,7 @@ export const Intro = styled.div`
     color: ${({ theme }) => theme.darkGrayishBlue}
   }
   & button {
-    margin: 20px 0;
+    margin: 17px 0;
   }
   @media screen and (min-width: 769px) {
     text-align: left;

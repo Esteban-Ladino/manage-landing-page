@@ -1,12 +1,13 @@
 import React from 'react'
-import { Btn } from './styles'
+import { StyledButton } from './styles'
 
 export const Button = (props) => {
   const {
-    text
+    text,
+    white
   } = props
 
   return (
-    <Btn>{text}</Btn>
+    <StyledButton white={white}>{text}</StyledButton>
   )
 }

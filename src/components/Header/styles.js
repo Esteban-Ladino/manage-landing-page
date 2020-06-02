@@ -6,6 +6,8 @@ export const StyledHeader = styled.header`
   align-items: center;
   justify-content: space-between;
   height: 80px;
+  max-width: 1125px;
+  margin: 0 auto;
   padding: 20px 20px 0;
   & button {
     display: none;
@@ -32,9 +34,12 @@ export const Ul = styled.ul`
     font-size: .84rem;
     & li {
       margin: 0 13px;
-      & a{
+      & a {
         text-decoration: none;
         color: ${({ theme }) => theme.darkBlue};
+        &:hover {
+          color: ${({ theme }) => theme.darkGrayishBlue};
+        }
       }
     }
   }

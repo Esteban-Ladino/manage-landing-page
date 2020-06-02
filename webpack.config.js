@@ -9,7 +9,7 @@ module.exports = {
     extensions: ['.js', '.jsx']
   },
   devServer: {
-    host: '192.168.1.2',
+    host: '192.168.1.4',
     port: 8080,
     disableHostCheck: true
   },
@@ -26,11 +26,24 @@ module.exports = {
         }
       },
       {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      {
         test: /\.(jpg|png|gif|svg)$/,
         use: {
           loader: 'file-loader',
-          options: { name: 'assets/[hash].[ext]' }
+          options: { name: 'assets/static/[hash].[ext]' }
         }
+      },
+      {
+        test: /\.ttf$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: { name: 'assets/fonts/[hash].[ext]' }
+          }
+        ]
       }
     ]
   },
