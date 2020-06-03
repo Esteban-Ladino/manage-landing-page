@@ -44,6 +44,15 @@ module.exports = {
             options: { name: 'assets/fonts/[hash].[ext]' }
           }
         ]
+      },
+      {
+        test: /\.(jpg|png|gif|woff|eot|ttf|svg|mp4|webm)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 90000
+          }
+        }
       }
     ]
   },

@@ -3,7 +3,7 @@ This is the Manage landing page coding challenge by [Frontend Mentor](https://ww
 Created using ReactJS
 
 ## Demo
-If you want to see the demo of this project deployed, you can visit it here
+If you want to see the demo of this project deployed, you can visit it [here](https://relaxed-borg-a653d7.netlify.app/)
 
 ## How to clone
 You can clone the repository
